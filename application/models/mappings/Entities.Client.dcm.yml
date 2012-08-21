@@ -1,0 +1,32 @@
+Entities\Client:
+  type: entity
+  table: client  
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    password:
+      type: string
+      length: 32
+      nullable: false
+    name:
+      type: string
+      length: 255
+      nullable: false
+      column: client_name    
+    company:
+      type: string
+      length: 255
+      nullable: true
+      column: company
+    contact:
+      type: string
+      length: 255
+      nullable: true
+      column: contact
+    info:
+      type: string
+      length: 255
+      column: client_info
