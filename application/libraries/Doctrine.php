@@ -11,7 +11,7 @@ class Doctrine
         // include our CodeIgniter application's database configuration
         require APPPATH.'config/database.php';
         
-        $this->_ci = &get_instance();
+        // $this->_ci = &get_instance();
 
         // load the Doctrine classes
         $doctrineClassLoader = new \Doctrine\Common\ClassLoader('Doctrine', APPPATH.'libraries');
